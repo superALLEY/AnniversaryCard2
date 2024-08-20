@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b3e5fc; /* Light blue background */
+}
+
+.carte {
+    background-color: #ffffff;
+    border: 2px solid #0288d1;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 350px;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+}
+
+.carte:hover {
+    transform: rotate(5deg); /* Slight rotation on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    background-color: #e1f5fe;
+}
+
+h1 {
+    color: #0288d1;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.message {
+    display: none;
+    font-size: 18px;
+    margin: 15px 0;
+    color: #333;
+}
+
+#afficher-btn {
+    background-color: #0288d1;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 25px;
+    transition: background-color 0.3s;
+}
+
+#afficher-btn:hover {
+    background-color: #0277bd;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    display: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    transition: transform 0.5s;
+}
+
+.photo-visible {
+    display: block;
+    transform: scale(1.1); /* Slight hover enlargement */
+}
+
+.carte:hover .photo-visible {
+    transform: scale(1.2) rotate(-5deg); /* Additional hover effect with rotation */
+}
